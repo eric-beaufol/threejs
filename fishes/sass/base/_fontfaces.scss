@@ -1,0 +1,44 @@
+/* ------------------------------------------------------ */
+/* STANDARD
+/* ------------------------------------------------------ */
+
+@font-face {
+    font-family: 'gillsansstd';
+    src: url('../fonts/gillsansstd-webfont.eot');
+    src: url('../fonts/gillsansstd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gillsansstd-webfont.woff') format('woff'),
+         url('../fonts/gillsansstd-webfont.ttf') format('truetype'),
+         url('../fonts/gillsansstd-webfont.svg#gillsansstd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ------------------------------------------------------ */
+/* Light
+/* ------------------------------------------------------ */
+
+@font-face {
+    font-family: 'gillsansstd-light';
+    src: url('../fonts/gillsansstd-light.eot');
+    src: url('../fonts/gillsansstd-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gillsansstd-light.woff') format('woff'),
+         url('../fonts/gillsansstd-light.ttf') format('truetype'),
+         url('../fonts/gillsansstd-light.svg#gillsanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ------------------------------------------------------ */
+/* Bold
+/* ------------------------------------------------------ */
+
+@font-face {
+    font-family: 'gillsansstd-bold';
+    src: url('../fonts/gillsansstd-bold.eot');
+    src: url('../fonts/gillsansstd-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gillsansstd-bold.woff') format('woff'),
+         url('../fonts/gillsansstd-bold.ttf') format('truetype'),
+         url('../fonts/gillsansstd-bold.svg#gillsansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

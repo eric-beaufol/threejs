@@ -1,0 +1,27 @@
+{
+  "name": "marcelStrap",
+  "version": "0.0.1",
+  "description": "backbone and rjs boilerplate",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "../www/js/app/libs"
+  ],
+  "dependencies": {
+    "underscore": "~1.6.0",
+    "jquery": "1.11",
+    "requirejs": "~2.1.14",
+    "backbone": "~1.1.2",
+    "requirejs-text": "~2.0.12",
+    "mobile-detect": "hgoebl/mobile-detect.js#~0.4.3",
+    "three.js": "threejs#*",
+    "stats.js": "*",
+    "dat-gui": "~0.5.1",
+    "jquery-mousewheel": "~3.1.13"
+  }
+}

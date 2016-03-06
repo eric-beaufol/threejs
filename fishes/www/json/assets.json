@@ -1,0 +1,31 @@
+{   "assets": [
+        {
+            "type": "image",
+            "path": "img/test-01.png"
+        },
+		{
+            "type": "image",
+            "path": "img/test-02.png"
+        },
+		{
+            "type": "image",
+            "path": "img/test-03.png"
+        },
+		{
+            "type": "image",
+            "path": "img/test-04.png"
+        },
+		{
+            "type": "image",
+            "path": "img/test-05.png"
+        },
+		{
+            "type": "image",
+            "path": "img/test-06.png"
+        },
+		{
+            "type": "image",
+            "path": "img/test-07.png"
+        }
+    ]
+}

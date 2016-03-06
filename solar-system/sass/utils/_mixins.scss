@@ -1,0 +1,109 @@
+/* ------------------------------------------------------ */
+/* MIXIN
+/* ------------------------------------------------------ */
+
+@mixin font-size($size) {
+    font-size: $size + px;
+    font-size: ($size / 16) + rem; /* Indiquer la font-size du body par défaut*/
+}
+
+/* Responsive
+/* ------------------------------------------------------ */
+
+@mixin at-least($device-width) {
+  @media screen and (min-width: $device-width) {
+    @content
+  }
+}
+
+@mixin bp($device-width) {
+  @media screen and (max-width: $device-width - 1) {
+    @content
+  }
+}
+
+// --------------------------------------------------------------------------------------------------------
+//
+// placeholder options
+//
+//---------------------------------------------------------------------------------------------------------
+
+@mixin input-placeholder {
+    &.placeholderfbk { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+}
+
+
+// --------------------------------------------------------------------------------------------------------
+//
+// global active hover focus state
+//
+//---------------------------------------------------------------------------------------------------------
+
+@mixin hoverState {
+    &:active { @content; }
+    &:focus { @content; }
+    &:hover { @content; }
+}
+
+// --------------------------------------------------------------------------------------------------------
+//
+// hide content text
+//
+//---------------------------------------------------------------------------------------------------------
+
+@mixin hiddenText {
+    display: block;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+// --------------------------------------------------------------------------------------------------------
+//
+// hide full content
+//
+//---------------------------------------------------------------------------------------------------------
+
+@mixin absolute9999 {
+    position: absolute;
+    top: -9999em;
+    left: -9999em;
+}
+
+// --------------------------------------------------------------------------------------------------------
+//
+// sprite mixings
+//
+//---------------------------------------------------------------------------------------------------------
+
+
+// $map = sprite name $sprite = icon file name
+@mixin sprite-background($map, $sprite) {
+    background-position: sprite-position($map, $sprite);
+    @include sprite-dimensions($map, $sprite);
+    // or height: image-height(sprite-file($map, $sprite));
+    // or width: image-width(sprite-file($map, $sprite));
+    margin-left: -(image-width(sprite-file($map, $sprite)))/2;
+    margin-top: -(image-height(sprite-file($map, $sprite)))/2;
+}
+
+@mixin spriteSize($map, $sprite) {
+    background: $map;
+    background-position: sprite-position($map, $sprite);
+    height: image-height(sprite-file($map, $sprite));
+    width: image-width(sprite-file($map, $sprite));
+}
+
+@mixin centeredPicto($map, $sprite) {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    @include spriteSize($map, $sprite);
+    margin-left: -(image-width(sprite-file($map, $sprite)))/2;
+    margin-top: -(image-height(sprite-file($map, $sprite)))/2;
+}

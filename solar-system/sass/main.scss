@@ -1,0 +1,14 @@
+@import "compass/reset";
+@import "compass/css3";
+
+/* utils */
+@import "utils/variables";
+@import "utils/mixins";
+
+/* base */
+@import "base/base";
+@import "base/fontfaces";
+
+/* pages styles */
+@import "pages/home"; 
+

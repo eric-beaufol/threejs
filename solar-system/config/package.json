@@ -1,0 +1,28 @@
+{
+  "name": "marcelStrap",
+  "version": "0.0.0",
+  "description": "backbone & rjs boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MarcelLab",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-browser-sync": "^2.1.3",
+    "grunt-contrib-compass": "^1.0.1",
+    "grunt-contrib-copy": "~0.8.0",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-requirejs": "~0.4.4",
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-svgmin": "^2.0.1",
+    "load-grunt-tasks": "^3.1.0"
+  },
+  "dependencies": {
+    "imagemin": "^3.2.0",
+    "svgmin": "^0.1.0"
+  }
+}

@@ -1,0 +1,126 @@
+{
+    "name": "Marcel WorldWide Project",
+    "description": "Marcel WorldWide Project",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.2.8",
+        "ext-mcrypt": "*",
+        "cakephp/cakephp": "2.6.*",
+        "marcellab_cake2_authentification": "*",
+        "marcellab_cake2_environment": "*",
+        "marcellab_cake2_rest": "*",
+        "marcellab_cake2_robots": "*",
+        "marcellab_cake2_upload": "*",
+        "phpunit/phpunit": "3.7.*",
+        "cakephp/debug_kit" : "2.2.*"
+    },
+    "bin": [
+        "lib/Cake/Console/cake"
+    ],
+    "repositories":  [
+        {
+            "type": "package",
+            "package": {
+                "name": "cakephp/cakephp",
+                "type": "cakephp-plugin",
+                "version": "master",
+                "source": {
+                    "url": "http://github.com/cakephp/cakephp.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "marcellab_cake2_authentification",
+                "type": "cakephp-plugin",
+                "version": "master",
+                "source": {
+                    "url": "http://gitlab.marceldev.fr:6700/labs/marcellab_cake2_authentification.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "marcellab_cake2_environment",
+                "type": "cakephp-plugin",
+                "version": "master",
+                "source": {
+                    "url": "http://gitlab.marceldev.fr:6700/labs/marcellab_cake2_environment.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "marcellab_cake2_rest",
+                "type": "cakephp-plugin",
+                "version": "master",
+                "source": {
+                    "url": "http://gitlab.marceldev.fr:6700/labs/marcellab_cake2_rest.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "marcellab_cake2_robots",
+                "type": "cakephp-plugin",
+                "version": "master",
+                "source": {
+                    "url": "http://gitlab.marceldev.fr:6700/labs/marcellab_cake2_robots.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "marcellab_cake2_upload",
+                "type": "cakephp-plugin",
+                "version": "master",
+                "source": {
+                    "url": "http://gitlab.marceldev.fr:6700/labs/marcellab_cake2_upload.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendors",
+        "bin-dir": "vendors/bin"
+    },
+    "extra": {
+        "installer-paths": {
+            "app/Plugin/DebugKit": [
+                "cakephp/debug_kit"
+            ],
+            "app/Plugin/Authentification": [
+                "marcellab_cake2_authentification"
+            ],
+            "app/Plugin/Environment": [
+                "marcellab_cake2_environment"
+            ],
+            "app/Plugin/Rest": [
+                "marcellab_cake2_rest"
+            ],
+            "app/Plugin/Robots": [
+                "marcellab_cake2_robots"
+            ],
+            "app/Plugin/Upload": [
+                "marcellab_cake2_upload"
+            ]
+        }
+    }
+}

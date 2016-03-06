@@ -1,0 +1,19 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/css/main.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+/* The rule of thumb for this folder is that it should not output a single line of CSS when compiled on its own. */
+@import "utils/variables";
+@import "utils/mixins";
+
+/* standard styles for commonly used HTML, Base styles: projects defaults html elements, class-one-rule helpers for flexible html edition, fontfaces configuration */
+@import "base/base";
+@import "base/fontfaces";
+
+/* page-specific styles */
+@import "pages/home";
+
